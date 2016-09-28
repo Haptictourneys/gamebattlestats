@@ -53,15 +53,48 @@
 @section('content')
     <div class="container">
         <br>
-        <div class="row text-center platforms">
-            <div class="col-md-4 form-group">
-                <h3>PC</h3>
+        <div class="row">
+            <div class="col-md-3">
+                <div class="platform">
+                    <h3>PC</h3>
+                    <a href="#">Ladders</a>
+                    <span>|</span>
+                    <a href="#">Tournaments</a>
+                </div>
             </div>
-            <div class="col-md-4 form-group">
-                <h3>PS 4</h3>
+            <div class="col-md-3">
+                <div class="platform">
+                    <h3>PS 4</h3>
+                    <a href="#">Ladders</a>
+                    <span>|</span>
+                    <a href="#">Tournaments</a>
+                </div>
             </div> 
-            <div class="col-md-4 form-group">
-                <h3>XBOX</h3>
+            <div class="col-md-3">
+                <div class="platform">
+                    <h3>XBOX</h3>
+                    <a href="#">Ladders</a>
+                    <span>|</span>
+                    <a href="#">Tournaments</a>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="platform">
+                    <h3>Wii</h3>
+                    <a href="#">Ladders</a>
+                    <span>|</span>
+                    <a href="#">Tournaments</a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="widget-title">
+                    <h3>Latest news</h3>
+                </div>
             </div>
         </div>
 

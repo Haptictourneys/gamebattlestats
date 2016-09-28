@@ -4,7 +4,7 @@ body {
 }
 
 a {
-	color: #fff;
+	color: #c4d71f;
 }
 
 a:hover {
@@ -59,8 +59,14 @@ a:hover {
 /**
  * Content
  */
-.platforms > div {
+.platform {
+	padding: 0 10px 10px;
 	border-radius: 4px;
 	background: #273138;
 	border: 1px solid #313d46;
+}
+
+.widget-title h3:after {
+	border-bottom: 4px solid #777;
+	transform: translateY(-10px);
 }
