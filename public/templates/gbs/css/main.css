@@ -1,0 +1,66 @@
+body {
+	color: #fff;
+	background: #171e22 url('../images/ds3art.png') no-repeat top/cover;
+}
+
+a {
+	color: #fff;
+}
+
+a:hover {
+	color: #f0f0f0;
+}
+
+/**
+ * Header styling
+ */
+.header-bg {
+	color: #fff;
+	background: rgba(0, 0, 0, 0.5);
+}
+
+.logo {
+	padding: 12px;
+}
+
+.navbar-brand {
+	color: #fff;
+	font-size: 2.4em;
+}
+
+.navbar-brand:hover {
+	color: inherit;
+}
+
+.nav a {
+	font-weight: bold;
+	text-transform: uppercase;
+	color: #fff;
+}
+
+.nav > li > a:hover {
+	color: #c4d71f;
+	background: none;
+}
+
+.search-nav {
+	padding: 6px 0;
+}
+
+.search-nav a {
+	margin: 0 5px;
+}
+
+.carousel-inner {
+	max-height: 420px;
+	border-bottom: 3px solid #c4d71f;
+}
+
+/**
+ * Content
+ */
+.platforms > div {
+	border-radius: 4px;
+	background: #273138;
+	border: 1px solid #313d46;
+}
