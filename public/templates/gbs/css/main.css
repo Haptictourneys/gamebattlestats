@@ -61,12 +61,30 @@ a:hover {
  */
 .platform {
 	padding: 0 10px 10px;
+	margin: 2px 0;
 	border-radius: 4px;
 	background: #273138;
 	border: 1px solid #313d46;
 }
 
-.widget-title h3:after {
-	border-bottom: 4px solid #777;
+.widget-title h3 {
+	display: block;
+	flex: auto;
+}
+
+.widget-title h3:before, .widget-title h3:after {
+	content: "";
+	display: block;
+	flex: 20;
+	border-bottom: 3px solid white;
 	transform: translateY(-10px);
+}
+
+.widget-title h3:before {
+	width: 20px;
+}
+
+.widget-title h3:before {
+	width: 20px;
+	flex: 100;
 }
