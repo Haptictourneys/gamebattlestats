@@ -1,7 +1,6 @@
-# gamebattlestats
-GameBattleStats Ladders &amp; Tournaments Script
+# GameBattleStats Ladders &amp; Tournaments Script
 
-# installation
+# Installation
 First of all you need to install git on your host then run this command:
 
 ...
