@@ -17,30 +17,30 @@ a:hover {
 .header-bg {
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
-}
-
-.logo {
-	padding: 12px;
+	border-radius: 0;
 }
 
 .navbar-brand {
 	color: #fff;
 	font-size: 2.4em;
+	padding: 0;
+	height: auto;
 }
 
 .navbar-brand:hover {
 	color: inherit;
 }
 
-.nav a {
+.navbar-nav > li > a {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: #fff;
+	padding: 25px 15px;
 }
 
-.nav > li > a:hover {
+.nav > li > a:hover, .nav > li > a:active, .nav > li > a:focus {
 	color: #c4d71f;
-	background: none;
+	background: rgba(0, 0, 0, 0.6);
 }
 
 .search-nav {
@@ -67,24 +67,64 @@ a:hover {
 	border: 1px solid #313d46;
 }
 
-.widget-title h3 {
-	display: block;
-	flex: auto;
+.widget-title{
+	display: -webkit-flex;
+	display: flex;
 }
 
-.widget-title h3:before, .widget-title h3:after {
-	content: "";
+.widget-title:before, .widget-title:after {
+	content: '';
 	display: block;
-	flex: 20;
-	border-bottom: 3px solid white;
+	border-bottom: 4px solid;
 	transform: translateY(-10px);
-}
-
-.widget-title h3:before {
-	width: 20px;
-}
-
-.widget-title h3:before {
-	width: 20px;
+	-webkit-flex: 100;
 	flex: 100;
+}
+
+.widget-title:before {
+	border-bottom-color: white;
+	flex: 20px;
+	width: 20px;
+	min-width: 20px;
+}
+
+.widget-title > span {
+	flex: auto;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.modal-content {
+	background: #273138;
+	border-radius: 0;
+}
+
+.modal-header {
+	border-bottom: 0;
+}
+
+.modal-header .close {
+	color: #6b8799;
+	text-shadow: none;
+}
+
+/**
+ * Forms
+ */
+label {
+	font-weight: lighter;
+}
+
+input[type="text"], input[type="password"] {
+	background: none;
+	border: 1px solid #6b8799;
+	border-radius: 0;
+}
+
+/**
+ * Footer
+ */
+.copyright-footer {
+	background: black;
+	padding: 20px 0 10px;
 }
