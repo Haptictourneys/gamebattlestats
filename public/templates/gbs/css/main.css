@@ -14,10 +14,15 @@ a:hover {
 /**
  * Header styling
  */
-.header-bg {
+.header {
 	color: #fff;
 	background: rgba(0, 0, 0, 0.5);
 	border-radius: 0;
+	height: 72px;
+}
+
+.header.navbar-fixed-top {
+	height: 30px;
 }
 
 .navbar-brand {
@@ -31,6 +36,15 @@ a:hover {
 	color: inherit;
 }
 
+.navbar-brand > img {
+	height: 70px;
+	transition: all 0.1s ease;
+}
+
+.navbar-fixed-top .navbar-brand > img {
+	height: 50px;
+}
+
 .navbar-nav > li > a {
 	font-weight: bold;
 	text-transform: uppercase;
@@ -42,6 +56,10 @@ a:hover {
 	color: #c4d71f;
 	background: rgba(0, 0, 0, 0.6);
 }
+
+.navbar-fixed-top .navbar-nav > li > a {
+	padding: 15px 25px;
+} 
 
 .search-nav {
 	padding: 6px 0;

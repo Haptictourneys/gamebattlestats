@@ -22,7 +22,7 @@
 	        </div>
 	    </div>
 
-	    <nav class="navbar header-bg">
+	    <nav class="navbar header">
 	        <div class="container">
 	            <div class="navbar-header col-md-4">
 	                <a href="#" class="navbar-brand"><img src="templates/gbs/images/logo.png" alt="" class="img-responsive logo"></a>
@@ -31,7 +31,15 @@
 	            <div class="col-md-6 col-md-offset-2">
 	                <ul class="nav navbar-nav text-center">
 	                    <li class="active"><a href="{{ url('/') }}">Home</a></li>
-	                    <li><a href="{{ url('/tournaments') }}">Tournaments</a></li>
+	                    <li class="dropdown" role="presentation">
+	                    	<a class="dropdown-toggle" data-toggle="dropdown" href="#"
+	                    		role="button" aria-haspopup="true" aria-expanded="false">
+	                    		Tournaments <span class="caret"></span>
+	                    	</a>
+	                    	<ul class="dropdown-menu">
+	                    		<li><a href="#">Teams</a></li>
+	                    	</ul>
+	                    </li>
 	                    <li><a href="{{ url('/ladders') }}">Ladders</a></li>
 	                    <li><a href="#">FAQ</a></li>
 	                </ul>
@@ -76,6 +84,6 @@
 			</div>
 		</div>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script> 
+		<script src="{{url('templates/gbs/js/main.js')}}"></script>
 	</body>
 </html>

@@ -32,3 +32,6 @@ Route::group(['middleware' => ['web']], function () {
 
 Route::get('/ladders', 'LadderController@listLadders');
 Route::get('/tournaments', 'TournamentsController@listTournaments');
+Route::auth();
+
+Route::get('/home', 'HomeController@index');
